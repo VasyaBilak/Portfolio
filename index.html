@@ -7,16 +7,17 @@
   </head>
   <body>
     <header>
-     <div>
-	   <h2>Hi, I`m Vasyl Bilak</h2>
-	   <h3>Welcome my site resume</h3>
-	  <nav>
+     <div id ="long-tile">
+	   <h1>Hi, I`m Vasyl Bilak</h1>
+	   <h2>Welcome my site resume</h2>
+	   </div>
+	  <nav class = "toolbar">
         <a href="#home">Home</a>
         <a href="#profile">Profile</a>
         <a href="#contact">Contact</a>
       </nav>	        
 		<header>
-      <nav>
+      <nav class="menu">
         <a href="https://www.facebook.com/profile.php?id=100001683791648">Facebook</a>
         <a href="https://vk.com/vasyabilak">Vk</a>
         <a href="https://github.com/VasyaBilak">GitHub</a>
@@ -30,7 +31,7 @@
     <main>
       <section id="home">
 	  <div class="container">MY Photo</div>
-        <p>
+        <p id ="col1">
            Born 21.02.1992
 		   Ivano-Frankivsk region, kosiv district, village Himchyn.
 		   I live in the city Lviv, street Vladimir Velykiy
@@ -48,8 +49,7 @@
 		  <h3>I would be happy to discuss speaking (usually about JavaScript & CSS & HTML.).</h3>
 		  <h4>my telephone:</h4>
 		  <h5>+380983365873 +380933225111</h5>
-        </div>     
-        </div>
+        </div> 		
            <form id="fieldsheet" method="post" action="">
                     <fieldset>					
                         <label for="name">Name:</label>
@@ -59,6 +59,10 @@
                         <label for="email">e-mail:</label>
                         <input type="email" name="email" placeholder="www.xxx@xxx.com" required/>
                        <br>
+					   <br>
+					   <label for="age">Age</label>
+                        <input type="number" min="14" max="99" value="23">
+						<br>
                        <br>
                         <label for="massage">Message:</label>
                         <textarea rows="5" cols="50" name="massage" maxlength="10" placeholder="Write me message" required></textarea>
@@ -67,5 +71,6 @@
                         <input type="Submit" value="Send"/>
                     </fieldset>
                 </form>
+		 <form id="fieldsheet" method="post" action="">
   </body>
 </html>
